@@ -1,0 +1,10 @@
+on:
+  push:
+
+jobs:
+  call-workflow-passing-data:
+    uses: DevOpsORT-proyecto/obligatorioDevOps-infra/.github/workflows/Java-Workflow.yml@main
+    with:
+      service-name: Orders
+      sonar-project-key: DevOpsORT-proyecto_payments-service
+    secrets: inherit
