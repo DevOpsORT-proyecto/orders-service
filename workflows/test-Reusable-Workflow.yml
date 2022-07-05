@@ -1,3 +1,6 @@
+on:
+  push:
+
 jobs:
   call-workflow-passing-data:
     uses: proyectodevopsort/obligatorioDevOps-infra/.github/workflows/test-Reusable-Workflow.yml@PDO-2
