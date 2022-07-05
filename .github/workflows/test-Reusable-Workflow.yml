@@ -3,7 +3,7 @@ on:
 
 jobs:
   call-workflow-passing-data:
-    uses: proyectodevopsort/obligatorioDevOps-infra/.github/workflows/test-Reusable-Workflow.yml@PDO-2
+    uses: DevOpsORT-proyecto/obligatorioDevOps-infra/.github/workflows/test-Reusable-Workflow.yml@PDO-2
     with:
       service-name: Orders
       service-folder: orders-service
