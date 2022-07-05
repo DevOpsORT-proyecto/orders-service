@@ -15,7 +15,7 @@ public class OrdersServiceExampleApplication {
 		OrdersLogic.setShippingServiceUrl(args[1]);
 		OrdersLogic.setProductsServiceUrl(args[2]);
 
-		// Prueba 3
+		// Prueba 4
 
 		SpringApplication.run(OrdersServiceExampleApplication.class, args);
 	}
