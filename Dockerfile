@@ -12,5 +12,7 @@ RUN mvn -f /home/app/pom.xml clean package
 FROM openjdk:11-jre-slim
 COPY --from=build /home/app/target/orders-service-example-0.0.1-SNAPSHOT.jar /usr/local/lib/orders-service-example.jar
 EXPOSE 5001
-ENV foo="paymentsUrl shippingUrl productsUrl"
-CMD java -jar /usr/local/lib/orders-service-example.jar ${foo}
+ENV paymentsUrl="paymentsUrl"
+ENV shippingUrl="shippingUrl"
+ENV productsUrl="productsUrl"
+CMD java -jar /usr/local/lib/orders-service-example.jar ${paymentsUrl} ${shippingUrl} ${productsUrl}
