@@ -17,6 +17,7 @@ public class OrdersServiceExampleApplication {
 		System.out.println("Payments Url: " + args[0]);
 		System.out.println("Shipping Url: " + args[1]);
 		System.out.println("Products Url: " + args[2]);
+
 		SpringApplication.run(OrdersServiceExampleApplication.class, args);
 	}
 
