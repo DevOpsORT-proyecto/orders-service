@@ -11,7 +11,7 @@ RUN mvn -f /home/app/pom.xml clean package
 #
 FROM openjdk:11-jre-slim
 COPY --from=build /home/app/target/orders-service-example-0.0.1-SNAPSHOT.jar /usr/local/lib/orders-service-example.jar
-EXPOSE 5001
+EXPOSE 8080
 ENV paymentsUrl="paymentsUrl"
 ENV shippingUrl="shippingUrl"
 ENV productsUrl="productsUrl"
