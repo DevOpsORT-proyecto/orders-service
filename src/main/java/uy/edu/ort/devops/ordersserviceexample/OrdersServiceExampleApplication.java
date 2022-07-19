@@ -14,6 +14,9 @@ public class OrdersServiceExampleApplication {
 		OrdersLogic.setPaymentsServiceUrl(args[0]);
 		OrdersLogic.setShippingServiceUrl(args[1]);
 		OrdersLogic.setProductsServiceUrl(args[2]);
+		System.out.println("Payments Url: " + args[0]);
+		System.out.println("Shipping Url: " + args[1]);
+		System.out.println("Products Url: " + args[2]);
 
 		SpringApplication.run(OrdersServiceExampleApplication.class, args);
 	}
